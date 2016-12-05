@@ -1,7 +1,12 @@
 import telebot
 
-from examples.main_token import token
+from main_token import token
+import logging
+from logging.config import fileConfig
 
+fileConfig('logging.conf')
+logger = logging.getLogger()
+logger.debug('launching ButlerBot')
 
 bot = telebot.TeleBot(token)
 
