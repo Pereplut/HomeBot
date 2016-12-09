@@ -8,7 +8,6 @@ from app.models import Base, DHT11Table
 from app import app,session
 from logging.config import fileConfig
 
-
 fileConfig('logging.conf')
 logger = logging.getLogger()
 logger.debug('launching ButlerBot')
